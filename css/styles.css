@@ -152,31 +152,158 @@ header nav .btn-primary {
 
 /* second area */
 .s-card-featured .second-area {
-  padding-top: 10.4rem;
-  padding-bottom: 12rem;
+  /* padding-top: 10.4rem;
+  padding-bottom: 12rem; */
+  margin-top: 112px;
 }
 
 .second-area .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 6.4rem;
 }
 
 .second-area .all-images {
-  margin-top: 5.6rem;
+  /* margin-top: 5.6rem; */
   display: flex;
   flex-wrap: wrap;
-  gap: 3.2rem;
+  gap: 3.2rem; /* lembrar que esse 32px de gap foi calculado antes, a medida que eu aumentar isso aqui nao vai ficar 2 linahs de 6, vai quebrar e ficar 5, 4 itens por coluna */
 }
 
 .second-area .all-images .image {
   width: 100%;
+
+  background-color: var(--gray-colors-200);
+
   width: 17.6rem;
   height: 11.2rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+/* NEWSLETTER */
+.s-newsletter {
   background-color: var(--gray-colors-200);
+  padding: 15.2rem 0;
+
+  /* text-align: center; */
+}
+
+.s-newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s-newsletter h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.s-newsletter p {
+  text-align: center;
+
+  max-width: 69.4rem;
+  color: var(--white-colors-text);
+  margin-bottom: 4rem;
+}
+
+.s-newsletter .btn-primary {
+  padding: 1.75rem 4.1rem;
+}
+
+/* footer */
+footer {
+  background-color: var(--gray-colors-100);
+
+  padding-top: 8.8rem;
+  padding-bottom: 3.9rem;
+}
+
+footer main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 7.2rem;
+}
+
+footer .area-left {
+  width: 100%;
+  max-width: 28.1rem;
+}
+
+footer .area-left p {
+  margin-top: 3.5rem;
+  color: var(--white-colors-text);
+  font-family: "Inter";
+  font-size: 1.4rem;
+  line-height: 150%; /* 21px */
+}
+
+footer main nav {
+  width: 100%;
+  max-width: 77.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .item h6 {
+  color: var(--white);
+  font-family: "Sora";
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+}
+
+footer .item li {
+  margin-bottom: 3.2rem;
+}
+
+footer .item li:last-child {
+  margin-bottom: 0;
+}
+
+footer .item a {
+  color: var(--white-colors-text);
+  font-family: "Sora";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 105%; /* 14.7px */
+}
+
+footer .item:last-child a {
+  display: flex;
+  align-items: center;
+}
+
+footer .item:last-child a span {
+  margin-left: 0.8rem;
+}
+
+footer .copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.2rem;
+}
+
+footer .copy p {
+  color: var(--white-colors-text);
+  font-family: "Inter";
+  font-size: 1.4rem;
+  line-height: 150%; /* 21px */
+}
+
+footer .copy .group span {
+  color: var(--white-colors-text);
+  font-family: "Sora";
+  font-size: 1.4rem;
+  line-height: 150%; /* 21px */
 }

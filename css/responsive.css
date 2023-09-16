@@ -10,6 +10,18 @@
   .s-card-featured .all-cards .card {
     width: 32%;
   }
+
+  .second-area .all-images {
+    gap: 2rem 2%;
+  }
+
+  .second-area .all-images .image {
+    width: 23.5%;
+  }
+
+  footer main nav {
+    max-width: 63rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -61,12 +73,61 @@
     max-width: 100%;
     margin-top: 2rem;
   }
+
+  /* .second-area .all-images {
+    gap: 2rem;
+  }
+
+  .second-area .all-images .image {
+    width: 32.5%;
+  } */
+  footer main nav {
+    max-width: 45rem;
+  }
 }
 
 @media (max-width: 768px) {
+  footer main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer main .area-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  footer main .area-left p {
+    text-align: center;
+  }
+
+  footer main nav {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
+  .second-area .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second-area .top .title {
+    margin-bottom: 2rem;
+  }
+
+  .second-area .top .title h2,
+  .second-area .top .title p {
+    text-align: center;
+
+    /* basta um text-align center em .title */
+  }
+
+  .second-area .top .title h2 {
+    margin-bottom: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -112,5 +173,60 @@
 
   .s-card-featured .main-area {
     padding-bottom: 4rem;
+  }
+
+  .s-card-featured .second-area {
+    margin-top: 4rem;
+  }
+
+  .s-card-featured .second-area .top {
+    margin-bottom: 3rem;
+  }
+
+  .second-area .all-images {
+    gap: 0.5rem 2%;
+  }
+
+  .second-area .all-images .image {
+    width: 49%;
+  }
+
+  .s-newsletter {
+    padding: 4rem 0;
+  }
+
+  footer {
+    padding: 4rem 0;
+  }
+
+  footer .copy {
+    flex-direction: column;
+  }
+
+  footer .copy p {
+    margin-bottom: 2rem;
+  }
+
+  footer main {
+    padding-bottom: 4rem;
+  }
+
+  footer main nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer main nav .item {
+    margin-bottom: 4rem;
+  }
+
+  footer main nav .item:last-child {
+    margin-bottom: 0;
+  }
+
+  footer main nav .item ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
